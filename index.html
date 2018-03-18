@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>My Portfolio | Anna Petrikoglou</title>
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    The browser downloads all of the different css files and treat them as one-->
+  </head>
+  <body>
+    <header>
+      <div class="intro">
+        <img alt="udacity-logo" src="https://i2.wp.com/www.learninglean.org/wordpress/wp-content/uploads/2017/12/udacity-logo.png">
+        <div class="intro-info">
+          <h1>Anna Petrikoglou</h1><br>
+          <p>Junior Front-End Developer</p>
+        </div>
+      </div>
+      <a class="menu">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </a>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </yl>
+    </nav>
+    <main>
+      <article>
+        <img src="images\pexels-photo-428338-paint.jpg" alt="person">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      <section>
+        <div class="topic">
+          <img src="images\pexels-photo-794079-online.jpg" alt="mountain-view">
+          <a href="https://codepen.io/annie_p/pen/gvMGBj" target="_blank"><h2 class="topic-title">Pixel Art Maker</h2></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="topic">
+          <img src="images\pexels-photo-825949.jpeg" alt="dog-lion">
+          <a href="https://codepen.io/annie_p/pen/PEBbXy" target="_blank"><h2 class="topic-title">Animal Trading Card</h2></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="topic">
+          <img src="images\pexels-photo-442574.jpeg" alt="what's-next">
+          <h2 class="topic-title">Next: Memory Game</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Follow me on <a href="https://www.linkedin.com/in/anna-petrikoglou/" id="linkedin">LinkedIn</a>!</p>
+    </footer>
+    <script>
+    /*
+     * Open the drawer when the menu ison is clicked.
+     */
+    const menu = document.querySelector('.menu');
+    const main = document.querySelector('main');
+    const drawer = document.querySelector('.nav');
+
+    menu.addEventListener('click', function(e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function() {
+      drawer.classList.remove('open');
+    });
+    </script>
+  </body>
+</html>
