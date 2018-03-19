@@ -13,25 +13,28 @@ header, footer {
   padding: 20px 0;
 }
 
+footer {
+  margin-top: 20px;
+}
+
+.menu {
+  display: none;
+}
+
 .hamburger {
-    width: 35px;
+    width: 30px;
     height: 5px;
-    background-color: black;
+    background-color: lightgrey;
     margin: 5px 0;
 }
 
-/*
-.intro {
-  border-bottom: 1px solid black;
+nav {
+  border-bottom: 1px solid grey;
+  margin: 0 auto 20px auto;
 }
-*/
 
 .intro > img {
   max-width: 100px;
-}
-
-.intro-info {
-  display: inline;
 }
 
 .intro-info > h1 {
@@ -43,6 +46,10 @@ h1, p, li {
   margin: 0;
   display: inline;
   letter-spacing: 0.4px;
+}
+
+h3 {
+  margin: 0;
 }
 
 ul {
@@ -70,27 +77,44 @@ a {
   padding-bottom: 10px;
 }
 
-main, article, section {
+article, section {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 article > img, p {
   width: 30%;
-  display: inline;
 }
 
 article > img {
   width: auto;
   height: 300px;
+  margin: 20px 0 0 auto;
 }
 
 article > p {
   text-align: justify;
-  padding-left: 20px;
+  padding: 0 20px;
+  margin: 20px auto 0 0;
 }
 
-section {
+article {
+  margin: 10px auto 0 auto;
+}
+
+.work, .welcome {
+  display: block;
+  text-align: center;
+}
+
+.work-title, .welcome-title {
+  color: grey;
+  padding: 20px;
+  font-size: 40px;
+}
+
+section:nth-child(3) {
   margin: 20px 0;
   text-align: center;
 }
@@ -98,7 +122,8 @@ section {
 .topic {
   display: inline;
   border: 1px solid lightgrey;
-  margin: 10px;
+  text-align: center;
+  margin: 10px auto;
   padding: 10px;
   width: 30%;
 }
@@ -116,45 +141,32 @@ section {
   border-radius: 5px;*/
 }
 
-/* W3Schools.com - Menu Icon
-
-.container {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-
-*/
-
-
-
 @media screen and (max-width: 495px) {
+  .menu {
+    display: inline;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+  }
+
+  li {
+    display: block;
+    line-height: 50px;
+  }
 
   nav {
+    background-color: white;
     width: 300px;
-    height: 100%;
+    height: auto;
     position: absolute;
+    border-style: hidden;
     -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0);
-    transition: transform 0.3s ease;
+    transition: transform 0.01s ease;
   }
 
   nav.open {
@@ -162,21 +174,56 @@ section {
     transform: translate(0, 0);
   }
 
+  article {
+    text-align: center;
+  }
 
+  article > img, p {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .topic {
+    width: 90%;
+    margin: 2px auto 0 auto;
+  }
 }
 
+@media screen and (max-width: 650px) {
+  article {
+    text-align: center;
+  }
 
-/*
-font-family: 'Montserrat', sans-serif; -
-font-family: 'Raleway', sans-serif; -
-font-family: 'Amatic SC', cursive;
-font-family: 'Poiret One', cursive; -
-font-family: 'Caveat', cursive;
-font-family: 'Shadows Into Light Two', cursive;
-font-family: 'Julius Sans One', sans-serif;
-font-family: 'Pompiere', cursive; -
-font-family: 'The Girl Next Door', cursive;
-font-family: 'Give You Glory', cursive;
-font-family: 'Bubbler One', sans-serif; -
+  article > img, p {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-*/
+  .topic {
+    width: 90%;
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 890px) {
+  article {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article > img {
+    display: block;
+    width: 100%;
+  }
+
+  article > p {
+    display: block;
+    width: 100%;
+  }
+
+  .topic {
+    width: 90%;
+    margin: 10px auto 0 auto;
+  }
+}
