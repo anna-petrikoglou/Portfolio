@@ -82,7 +82,7 @@ h6 {
   width: 100%;
   margin: 0 auto 10px auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   color: #d3d3d3;
   text-transform: capitalize;
 }
@@ -121,7 +121,7 @@ article {
 
 .work-title, .welcome-title {
   color: #808080;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 section:nth-child(3) {
