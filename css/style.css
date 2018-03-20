@@ -49,7 +49,7 @@ h1, p, li {
 }
 
 h3 {
-  margin: 0;
+  margin: 0 auto;
 }
 
 ul {
@@ -75,6 +75,15 @@ a {
 
 .intro-info > p {
   padding-bottom: 10px;
+}
+
+h6 {
+  display: block;
+  width: 100%;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  font-size: 25px;
+  color: #d3d3d3;
 }
 
 article, section {
@@ -106,16 +115,16 @@ article {
 .work, .welcome {
   display: block;
   text-align: center;
+  margin: 0 auto;
 }
 
 .work-title, .welcome-title {
   color: grey;
-  padding: 20px;
   font-size: 40px;
 }
 
 section:nth-child(3) {
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   text-align: center;
 }
 
@@ -123,7 +132,7 @@ section:nth-child(3) {
   display: inline;
   border: 1px solid lightgrey;
   text-align: center;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 10px;
   width: 30%;
 }
