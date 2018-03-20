@@ -24,12 +24,12 @@ footer {
 .hamburger {
     width: 30px;
     height: 5px;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     margin: 5px 0;
 }
 
 nav {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #808080;
   margin: 0 auto 20px auto;
 }
 
@@ -60,7 +60,7 @@ ul {
 }
 
 li:hover, h2:hover {
-  color: lightblue;
+  color: #add8e6;
 }
 
 a {
@@ -69,7 +69,7 @@ a {
 }
 
 #linkedin {
-  color: lightblue;
+  color: #add8e6;
   text-decoration: underline;
 }
 
@@ -84,6 +84,7 @@ h6 {
   text-align: center;
   font-size: 25px;
   color: #d3d3d3;
+  text-transform: capitalize;
 }
 
 article, section {
@@ -119,7 +120,7 @@ article {
 }
 
 .work-title, .welcome-title {
-  color: grey;
+  color: #808080;
   font-size: 40px;
 }
 
@@ -130,7 +131,7 @@ section:nth-child(3) {
 
 .topic {
   display: inline;
-  border: 1px solid lightgrey;
+  border: 1px solid #d3d3d3;
   text-align: center;
   margin: 20px auto;
   padding: 10px;
@@ -142,7 +143,7 @@ section:nth-child(3) {
 }
 
 .topic-title {
-  color: grey;
+  color: #808080;
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
@@ -168,7 +169,7 @@ section:nth-child(3) {
   }
 
   nav {
-    background-color: white;
+    background-color: #fff;
     width: 300px;
     height: auto;
     position: absolute;
