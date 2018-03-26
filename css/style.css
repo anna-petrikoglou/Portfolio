@@ -170,7 +170,7 @@ section:nth-child(3) {
 
   nav {
     background-color: #fff;
-    width: 100%;
+    width: 300px;
     height: auto;
     position: absolute;
     border-style: hidden;
